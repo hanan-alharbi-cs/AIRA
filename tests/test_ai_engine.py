@@ -327,3 +327,47 @@ def test_readiness_output_contract():
     assert "warning_points" in result["early_warning"]
     assert "risk_level" in result["early_warning"]
     assert "signals" in result["early_warning"]
+    # ---------------------------------------------------------
+# What-If tests
+# ---------------------------------------------------------
+
+
+from ai.scoring.what_if import calculate_what_if
+
+
+def test_what_if_returns_comparison():
+    player = create_test_player()
+
+    result = calculate_what_if(
+        player,
+        {
+            "sleep_duration": 7.0,
+            "training_duration_min": 70,
+        },
+    )
+
+    assert result["player_id"] == "P001"
+
+    assert "current_score" in result
+    assert "scenario_score" in result
+    assert "delta" in result
+
+    assert "scenario_risk_level" in result
+    assert "scenario_recommendation" in result
+    assert "scenario_factors" in result
+    assert "changes" in result
+
+
+def test_what_if_does_not_modify_original_data():
+    player = create_test_player()
+    original = dict(player)
+
+    calculate_what_if(
+        player,
+        {
+            "sleep_duration": 8.0,
+            "training_duration_min": 60,
+        },
+    )
+
+    assert player == original
