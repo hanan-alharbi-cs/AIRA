@@ -371,3 +371,53 @@ def test_what_if_does_not_modify_original_data():
     )
 
     assert player == original
+    # ---------------------------------------------------------
+# Model adapter tests
+# ---------------------------------------------------------
+
+from ai.models.model_adapter import (
+    MLModelAdapter,
+    RuleBasedFallbackModel,
+)
+
+
+def test_ml_model_adapter_is_unavailable_without_model():
+    model = MLModelAdapter()
+
+    assert model.is_available() is False
+
+
+def test_rule_based_fallback_is_unavailable_as_ml_model():
+    model = RuleBasedFallbackModel()
+
+    assert model.is_available() is False
+
+
+def test_ml_model_adapter_predict_requires_loaded_model():
+    model = MLModelAdapter()
+
+    try:
+        model.predict(
+            {
+                "sleep_subscore": 70,
+                "recovery_subscore": 80,
+            }
+        )
+        assert False
+    except RuntimeError as error:
+        assert "ML model is not loaded" in str(error)
+
+
+def test_rule_based_fallback_predict_requires_ml_model():
+    model = RuleBasedFallbackModel()
+
+    try:
+        model.predict(
+            {
+                "sleep_subscore": 70,
+                "recovery_subscore": 80,
+            }
+        )
+        assert False
+    except RuntimeError as error:
+        assert "ML model is not available" in str(error)
