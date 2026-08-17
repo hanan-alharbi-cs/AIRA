@@ -25,6 +25,8 @@ from ai.scoring.early_warning import calculate_early_warning
 
 from ai.explainability.rules_explainer import explain_readiness
 
+from ai.scoring.readiness_service import calculate_readiness_output
+
 
 def create_test_player() -> dict:
     """Return a deterministic player scenario for testing."""
@@ -273,3 +275,55 @@ def test_early_warning_signals():
         "sleep_deviation",
         "recovery_drop",
     ]
+
+
+# ---------------------------------------------------------
+# AI Output Contract tests
+# ---------------------------------------------------------
+
+
+def test_readiness_output_contract():
+    player = create_test_player()
+
+    result = calculate_readiness_output(player)
+
+    required_fields = {
+        "player_id",
+        "readiness_score",
+        "risk_level",
+        "recommendation",
+        "data_quality",
+        "factors",
+        "early_warning",
+        "metrics",
+        "subscores",
+        "deviations",
+    }
+
+    assert required_fields.issubset(result.keys())
+
+    assert isinstance(
+        result["player_id"],
+        str,
+    )
+
+    assert 0 <= result["readiness_score"] <= 100
+
+    assert result["risk_level"] in {
+        "low",
+        "moderate",
+        "elevated",
+    }
+
+    assert 0 <= result["data_quality"] <= 1
+
+    assert isinstance(
+        result["factors"],
+        list,
+    )
+
+    assert len(result["factors"]) <= 3
+
+    assert "warning_points" in result["early_warning"]
+    assert "risk_level" in result["early_warning"]
+    assert "signals" in result["early_warning"]
