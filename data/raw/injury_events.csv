@@ -1,0 +1,21 @@
+player_id,injury,injury_match_id,injury_match_number,recovery_days,has_injury_event
+P001,No Injury,,,0,0
+P002,Hamstring Strain,M022,22.0,50,1
+P003,No Injury,,,0,0
+P004,Ankle Sprain,M018,18.0,11,1
+P005,No Injury,,,0,0
+P006,Groin Pull,M024,24.0,50,1
+P007,No Injury,,,0,0
+P008,Back Pain,M020,20.0,30,1
+P009,Hamstring Strain,M016,16.0,8,1
+P010,Ankle Sprain,M025,25.0,35,1
+P011,No Injury,,,0,0
+P012,Back Pain,M021,21.0,15,1
+P013,No Injury,,,0,0
+P014,No Injury,,,0,0
+P015,No Injury,,,0,0
+P016,No Injury,,,0,0
+P017,No Injury,,,0,0
+P018,Shoulder Injury,M019,19.0,40,1
+P019,No Injury,,,0,0
+P020,Ankle Sprain,M023,23.0,47,1

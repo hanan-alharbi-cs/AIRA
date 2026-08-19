@@ -1,0 +1,124 @@
+=== Missing Values Check ===
+
+Players Missing Values:
+player_id    0
+name         0
+age          0
+position     0
+team         0
+dtype: int64
+
+Stats Missing Values:
+player_id           0
+goals               0
+assists             0
+yellow_cards        0
+red_cards           0
+matches_played      0
+reaction_time_ms    0
+sleep_duration      0
+recovery_score      0
+dtype: int64
+
+Matches Missing Values:
+player_id         0
+match_id          0
+minutes_played    0
+dtype: int64
+
+Baselines Missing Values:
+player_id                 0
+baseline_training_load    0
+baseline_reaction_time    0
+baseline_sleep            0
+baseline_recovery         0
+dtype: int64
+
+Metrics Missing Values:
+player_id                  0
+baseline_training_load     0
+baseline_reaction_time     0
+baseline_sleep             0
+baseline_recovery          0
+goals                      0
+assists                    0
+yellow_cards               0
+red_cards                  0
+matches_played             0
+reaction_time_ms           0
+sleep_duration             0
+recovery_score             0
+session_load               0
+acute_load                 0
+chronic_load               0
+acwr                       0
+sleep_deviation            0
+reaction_time_deviation    0
+recovery_drop              0
+warning_points             0
+dtype: int64
+
+=== Schema Check ===
+
+Players Missing Columns: set()
+
+Stats Missing Columns: set()
+
+Matches Missing Columns: set()
+
+Baselines Missing Columns: set()
+
+Metrics Missing Columns: set()
+
+=== Outliers Check ===
+
+Outliers in baseline_training_load: 0
+
+Outliers in baseline_reaction_time: 0
+
+Outliers in baseline_sleep: 0
+
+Outliers in baseline_recovery: 2
+
+Outliers in goals: 0
+
+Outliers in assists: 0
+
+Outliers in yellow_cards: 0
+
+Outliers in red_cards: 0
+
+Outliers in matches_played: 0
+
+Outliers in reaction_time_ms: 0
+
+Outliers in sleep_duration: 0
+
+Outliers in recovery_score: 2
+
+Outliers in session_load: 0
+
+Outliers in acute_load: 0
+
+Outliers in chronic_load: 0
+
+Outliers in acwr: 0
+
+Outliers in sleep_deviation: 0
+
+Outliers in reaction_time_deviation: 0
+
+Outliers in recovery_drop: 0
+
+Outliers in warning_points: 0
+
+=== Baseline Sanity Check ===
+Baseline Sleep Range: 6.59 - 8.95
+Baseline Reaction Time Range: 183.0 - 257.0
+
+=== Metrics Sanity Check ===
+ACWR Range: 0.8308157099697885 - 1.104536489151874
+Warning Points Range: 0 - 0
+
+=== Player-Match Linkage Check ===
+Players in player_matches.csv: 20

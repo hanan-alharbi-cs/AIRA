@@ -1,0 +1,5 @@
+event_id,event_name,event_date,competition,importance
+E001,League Match,2026-08-20,League,3
+E002,Cup Match,2026-08-23,Cup,4
+E003,League Match,2026-08-27,League,3
+E004,Championship Final,2026-08-30,Final,5

@@ -1,0 +1,21 @@
+player_id,name,age,position,team
+P001,Player 1,21,Forward,Team C
+P002,Player 2,25,Midfielder,Team B
+P003,Player 3,21,Forward,Team D
+P004,Player 4,19,Forward,Team A
+P005,Player 5,24,Midfielder,Team A
+P006,Player 6,35,Midfielder,Team D
+P007,Player 7,25,Goalkeeper,Team C
+P008,Player 8,18,Midfielder,Team D
+P009,Player 9,28,Defender,Team B
+P010,Player 10,24,Defender,Team A
+P011,Player 11,20,Goalkeeper,Team A
+P012,Player 12,29,Defender,Team C
+P013,Player 13,19,Goalkeeper,Team A
+P014,Player 14,30,Forward,Team C
+P015,Player 15,29,Midfielder,Team A
+P016,Player 16,19,Midfielder,Team C
+P017,Player 17,20,Midfielder,Team A
+P018,Player 18,30,Defender,Team D
+P019,Player 19,29,Midfielder,Team C
+P020,Player 20,29,Midfielder,Team C
