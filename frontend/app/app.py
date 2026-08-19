@@ -1,5 +1,5 @@
 from __future__ import annotations
-
+import os
 import json
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -71,12 +71,24 @@ UPCOMING_EVENTS_FILE = (
     / "upcoming_events.csv"
 )
 
+API_BASE_URL = os.getenv(
+    "AIRA_API_URL",
+    "http://127.0.0.1:8001",
+).rstrip("/")
+
+import os
+
+API_BASE_URL = os.getenv(
+    "AIRA_API_URL",
+    "http://127.0.0.1:8001",
+).rstrip("/")
+
 BACKEND_URL = (
-    "http://127.0.0.1:8001/get_hybrid_risk"
+    f"{API_BASE_URL}/get_hybrid_risk"
 )
 
 WHAT_IF_URL = (
-    "http://127.0.0.1:8001/get_what_if"
+    f"{API_BASE_URL}/get_what_if"
 )
 
 EARLY_WARNING_THRESHOLD = 0.40
