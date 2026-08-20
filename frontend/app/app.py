@@ -79,14 +79,14 @@ UPCOMING_EVENTS_FILE = (
 )
 
 API_BASE_URL = os.getenv(
-    "HARES AI _API_URL",
+    "AIRA_API_URL",
     "http://127.0.0.1:8001",
 ).rstrip("/")
 
 import os
 
 API_BASE_URL = os.getenv(
-    "HARES AI _API_URL",
+    "AIRA_API_URL",
     "http://127.0.0.1:8001",
 ).rstrip("/")
 
@@ -223,7 +223,7 @@ def render_login() -> None:
     st.markdown(
         '''
 <div class="ag-card">
-    <div class="ag-title">⚡ HARES AI </div>
+    <div class="ag-title">⚡ AIRA</div>
 </div>
 ''',
         unsafe_allow_html=True,
@@ -1131,7 +1131,7 @@ except Exception as exc:
 st.markdown(
     """
 <div class="ag-card">
-    <div class="ag-title">⚡ HARES AI </div>
+    <div class="ag-title">⚡ AIRA</div>
 </div>
 """,
     unsafe_allow_html=True,
@@ -4953,7 +4953,7 @@ with st.expander(
 st.divider()
 
 st.caption(
-    "⚠️ HARES AI  — نموذج أولي بحثي يعتمد حاليًا "
+    "⚠️ AIRA — نموذج أولي بحثي يعتمد حاليًا "
     "على بيانات تطوير اصطناعية. "
     "What-If وEvent Readiness أدوات دعم قرار أولية "
     "وليستا تصريحًا طبيًا بالمشاركة."
