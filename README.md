@@ -42,6 +42,7 @@ By integrating these components, AIRA aims to provide coaches with a more compre
 ## Key Features
 
 ### 1. Athlete Readiness Assessment
+
 Evaluates athlete readiness using multiple indicators:
 - Recovery score
 - Sleep duration and quality
@@ -50,6 +51,7 @@ Evaluates athlete readiness using multiple indicators:
 - Recent injury context
 
 ### 2. Training Load Analysis
+
 Analyzes training intensity and workload through:
 - Session Load
 - Acute Workload
@@ -58,9 +60,11 @@ Analyzes training intensity and workload through:
 - Historical baseline deviations
 
 ### 3. Machine Learning Injury-Risk Estimation
+
 Uses a temporal machine-learning model to estimate injury-risk probability based on engineered athlete performance and recovery features.
 
 ### 4. Hybrid AI Assessment
+
 Combines two assessment approaches:
 - Rule-Based Readiness Engine
 - Temporal Machine Learning Risk Model
@@ -68,18 +72,23 @@ Combines two assessment approaches:
 The hybrid engine integrates their outputs to provide a consolidated risk assessment.
 
 ### 5. Early Warning System
+
 Highlights relevant changes in athlete indicators to help identify patterns that may require attention.
 
 ### 6. Explainable Recommendations
+
 Provides understandable factors and recommendations based on athlete readiness indicators and risk assessments.
 
 ### 7. What-If Scenario Simulation
+
 Allows coaches to simulate hypothetical changes to training and recovery variables and compare potential assessment outcomes without modifying the original athlete data.
 
 ### 8. Event Readiness Assessment
+
 Includes event-focused readiness assessment to support athlete preparation for upcoming competitions.
 
 ### 9. Team Management
+
 Provides functionality for managing:
 - Athlete profiles
 - Training sessions
@@ -90,25 +99,30 @@ Provides functionality for managing:
 - Achievements
 
 ### 10. Data Visualization
+
 Uses interactive dashboards and charts to present athlete metrics, workload trends, and team information.
 
 ---
 
 ## Application Screenshots
 
-The following screenshots showcase the main features and interfaces of AIRA.
+Explore the main interfaces and features of AIRA through the following screenshots.
 
 ### 1. Team Readiness Dashboard
 
-Provides an overview of team risk distribution and average athlete readiness.
+Provides an overview of team risk distribution, current risk levels, and average athlete readiness.
 
 ![Team Readiness Dashboard](assets/Team%20Readiness%20Dashboard.PNG)
 
+---
+
 ### 2. Upcoming Event Readiness
 
-Displays athlete readiness scores and risk assessments for upcoming events.
+Displays athlete readiness scores and risk assessments for upcoming sporting events.
 
 ![Upcoming Event Readiness](assets/Upcoming%20Event%20Readiness.PNG)
+
+---
 
 ### 3. Athlete Data Input
 
@@ -116,17 +130,23 @@ Allows coaches to enter athlete training measurements and performance indicators
 
 ![Athlete Data Input](assets/Athlete%20Data%20Input.PNG)
 
+---
+
 ### 4. Early Warning Alerts & What-If Simulator
 
 Highlights training workload warnings and provides access to interactive scenario simulations.
 
 ![Early Warning Alerts and What-If Simulator](assets/Early%20Warning%20Alerts%20%26%20What-If%20Simulator.PNG)
 
+---
+
 ### 5. What-If Scenario Analysis
 
 Compares athlete readiness and risk indicators before and after hypothetical training interventions.
 
 ![What-If Scenario Analysis](assets/What-If%20Scenario%20Analysis.PNG)
+
+---
 
 ### 6. Match Management & Upcoming Events
 
@@ -346,7 +366,9 @@ Explore the deployed AIRA application:
 
 Watch the project walkthrough to explore AIRA's interface, features, and decision-support capabilities.
 
-[![AIRA – Project Demo & Walkthrough](https://img.youtube.com/vi/0rxrEvFUUQc/hqdefault.jpg)](https://youtu.be/0rxrEvFUUQc)
+[![AIRA – Athlete Insight, Readiness & Analytics | Project Demo](https://img.youtube.com/vi/0rxrEvFUUQc/hqdefault.jpg)](https://youtu.be/0rxrEvFUUQc)
+
+[Watch AIRA – Project Demo on YouTube](https://youtu.be/0rxrEvFUUQc)
 
 ---
 
