@@ -42,7 +42,7 @@ By integrating these components, AIRA aims to provide coaches with a more compre
 ## Key Features
 
 ### 1. Athlete Readiness Assessment
-Evaluates athlete readiness using multiple indicators, including:
+Evaluates athlete readiness using multiple indicators:
 - Recovery score
 - Sleep duration and quality
 - Training workload
@@ -91,6 +91,48 @@ Provides functionality for managing:
 
 ### 10. Data Visualization
 Uses interactive dashboards and charts to present athlete metrics, workload trends, and team information.
+
+---
+
+## Application Screenshots
+
+The following screenshots showcase the main features and interfaces of AIRA.
+
+### 1. Team Readiness Dashboard
+
+Provides an overview of team risk distribution and average athlete readiness.
+
+![Team Readiness Dashboard](assets/Team%20Readiness%20Dashboard.PNG)
+
+### 2. Upcoming Event Readiness
+
+Displays athlete readiness scores and risk assessments for upcoming events.
+
+![Upcoming Event Readiness](assets/Upcoming%20Event%20Readiness.PNG)
+
+### 3. Athlete Data Input
+
+Allows coaches to enter athlete training measurements and performance indicators.
+
+![Athlete Data Input](assets/Athlete%20Data%20Input.PNG)
+
+### 4. Early Warning Alerts & What-If Simulator
+
+Highlights training workload warnings and provides access to interactive scenario simulations.
+
+![Early Warning Alerts and What-If Simulator](assets/Early%20Warning%20Alerts%20%26%20What-If%20Simulator.PNG)
+
+### 5. What-If Scenario Analysis
+
+Compares athlete readiness and risk indicators before and after hypothetical training interventions.
+
+![What-If Scenario Analysis](assets/What-If%20Scenario%20Analysis.PNG)
+
+### 6. Match Management & Upcoming Events
+
+Provides tools for managing match records and monitoring upcoming competitions.
+
+![Match Management and Upcoming Events](assets/Match%20Management%20%26%20Upcoming%20Events.PNG)
 
 ---
 
@@ -157,6 +199,14 @@ AIRA/
 │   ├── hybrid/
 │   ├── models/
 │   └── scoring/
+│
+├── assets/
+│   ├── Team Readiness Dashboard.PNG
+│   ├── Upcoming Event Readiness.PNG
+│   ├── Athlete Data Input.PNG
+│   ├── Early Warning Alerts & What-If Simulator.PNG
+│   ├── What-If Scenario Analysis.PNG
+│   └── Match Management & Upcoming Events.PNG
 │
 ├── backend/
 │   ├── main.py
@@ -286,15 +336,17 @@ pytest -q
 
 ---
 
-## Demo & Project Preview
+## Live Demo
 
-**Live Demo:**
+Explore the deployed AIRA application:
 
-[Launch AIRA – Interactive Demo](https://tp9cdmkudbq9svafbkkzoq.streamlit.app/)
+[Launch AIRA – Live Demo](https://tp9cdmkudbq9svafbkkzoq.streamlit.app/)
 
-**Project Walkthrough:** To be added.
+## Project Demo Video
 
-Screenshots and a demonstration video will be included here when available.
+Watch the project walkthrough to explore AIRA's interface, features, and decision-support capabilities.
+
+[![AIRA – Project Demo & Walkthrough](https://img.youtube.com/vi/0rxrEvFUUQc/hqdefault.jpg)](https://youtu.be/0rxrEvFUUQc)
 
 ---
 
