@@ -123,7 +123,7 @@ flowchart TD
 
     G --> H["Risk Assessment"]
     H --> I["Decision Support"]
-    
+
     I --> J["Recommendations"]
     I --> K["Early Warnings"]
     I --> L["What-If Simulation"]
@@ -153,28 +153,10 @@ AIRA/
 │
 ├── ai/
 │   ├── explainability/
-│   │   └── rules_explainer.py
-│   │
 │   ├── features/
-│   │   ├── baseline_features.py
-│   │   ├── load_features.py
-│   │   └── recovery_features.py
-│   │
 │   ├── hybrid/
-│   │   └── hybrid_risk_engine.py
-│   │
 │   ├── models/
-│   │   ├── model_adapter.py
-│   │   ├── readiness_contract.py
-│   │   └── saved ML models
-│   │
 │   └── scoring/
-│       ├── early_warning.py
-│       ├── event_readiness.py
-│       ├── readiness_engine.py
-│       ├── readiness_service.py
-│       ├── risk.py
-│       └── what_if.py
 │
 ├── backend/
 │   ├── main.py
@@ -219,11 +201,6 @@ Follow these instructions to run AIRA locally.
 
 ```bash
 git clone https://github.com/hanan-alharbi-cs/AIRA.git
-```
-
-Navigate to the project directory:
-
-```bash
 cd AIRA
 ```
 
@@ -311,11 +288,9 @@ pytest -q
 
 ## Demo & Project Preview
 
-**GitHub Repository:**
+**Live Demo:**
 
-[https://github.com/hanan-alharbi-cs/AIRA](https://github.com/hanan-alharbi-cs/AIRA)
-
-**Live Demo:** Not publicly deployed yet.
+[Launch AIRA – Interactive Demo](https://tp9cdmkudbq9svafbkkzoq.streamlit.app/)
 
 **Project Walkthrough:** To be added.
 
@@ -342,7 +317,6 @@ AIRA is currently a prototype developed using synthetic development data.
 - Expand explainability and feature interpretation.
 - Enhance longitudinal athlete monitoring.
 - Strengthen data privacy and security.
-- Deploy a publicly accessible version of the platform.
 - Introduce additional analytical capabilities for coaches and sports teams.
 
 ---
@@ -353,8 +327,7 @@ AIRA is currently a prototype developed using synthetic development data.
 
 Computer Science | Artificial Intelligence | Machine Learning
 
-- GitHub: [hanan-alharbi-cs](https://github.com/hanan-alharbi-cs)
-- Project: [AIRA – Athlete Insight, Readiness & Analytics](https://github.com/hanan-alharbi-cs/AIRA)
+GitHub: [hanan-alharbi-cs](https://github.com/hanan-alharbi-cs)
 
 ---
 
